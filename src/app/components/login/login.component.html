@@ -1,0 +1,18 @@
+<div class="cotainer-fluid">
+    <h1 class="text-info text-center">Login</h1>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form method="post" #formRegistro="ngForm">
+                <label>Email:</label>
+                <input type="email" #cajaemail name="cajaemail" class="form-control"/>
+                <label>Contraseña:</label>
+                <input type="password" #cajapass name="cajapass" class="form-control"/>
+                <button class="btn btn-success" (click)="iniciarSesion()">
+                    Iniciar sesión
+                </button>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

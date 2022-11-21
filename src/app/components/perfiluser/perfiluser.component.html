@@ -1,0 +1,17 @@
+<div class="cotainer-fluid">
+    <h1 class="text-success text-center">Tu perfil</h1>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form *ngIf="perfil" method="post" #formRegistro="ngForm">
+                <label>Nombre:</label>
+                <input type="text" value="{{perfil.nombre}}" #cajanombre name="cajanombre" class="form-control" disabled/>
+                <label>Email:</label>
+                <input type="email" value="{{perfil.email}}" #cajaemail name="cajaemail" class="form-control" disabled/>
+                <label>Contraseña:</label>
+                <input type="text" value="{{perfil.pass}}" #cajapass name="cajapass" class="form-control" disabled/>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
